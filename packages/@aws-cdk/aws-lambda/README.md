@@ -17,7 +17,7 @@ import lambda = require('@aws-cdk/aws-lambda');
 const fn = new lambda.Function(this, 'MyFunction', {
     runtime: lambda.Runtime.NODEJS_10_X,
     handler: 'index.handler',
-    code: lambda.Code.asset('./lambda-handler'),
+    code: lambda.Code.AssetCode('./lambda-handler'),
 });
 ```
 
